@@ -1,0 +1,13 @@
+<div class="flex flex-row items-center justify-between border-b">
+    <h1>{{'messageHistory' | translate}}
+        <span *ngIf="messages">({{messages.length}})</span>
+    </h1>
+    <button mat-icon-button (click)="onAddMessage()">
+        <mat-icon aria-label="Add Message">add</mat-icon>
+    </button>
+</div>
+<mat-list role="list" class="overflow-auto">
+    <mat-list-item role="listitem" *ngFor="let message of messages">
+        <app-message-item [message]="message"></app-message-item>
+    </mat-list-item>
+</mat-list>

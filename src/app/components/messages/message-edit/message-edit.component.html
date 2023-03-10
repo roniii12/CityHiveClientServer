@@ -1,0 +1,21 @@
+<h1 class="title border-b flex flex-row justify-between gap2">
+    {{'newMessage' | translate }}
+    <button mat-icon-button (click)="onClose()">
+        <mat-icon aria-label="close">close</mat-icon>
+    </button>
+</h1>
+<form class="flex flex-col" [formGroup]="smsForm" (ngSubmit)="onSubmit()">
+    <label for="phoneNumber">{{'phoneNumber' | translate }}</label>
+    <mat-form-field appearance="outline">
+        <input id="phoneNumber" matInput formControlName="phone">
+    </mat-form-field>
+    <label for="messageText">{{'message' | translate }}</label>
+    <mat-form-field appearance="outline">
+        <textarea matInput maxlength="250" id="messageText" formControlName="message"></textarea>
+        <mat-hint>{{ (smsForm.get('message')?.value?.length || 0) + '/250'}}</mat-hint>
+    </mat-form-field>
+    <div class="flex flex-row justify-between">
+        <button mat-button type="button" (click)="onClear()">{{'clear' | translate}}</button>
+        <button mat-raised-button color="primary" type="submit">{{'submit' | translate}}</button>
+    </div>
+</form>

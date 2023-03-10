@@ -1,0 +1,12 @@
+{
+    "newMessage":"הודעה חדשה",
+    "phoneNumber":"מספר טלפון",
+    "message":"הודעה",
+    "clear": "נקה טופס",
+    "submit":"שלח",
+    "messageSentSuccessfully":"הודעה נשלחה בהצלחה",
+    "messageHistory":"היסטוריית הודעות",
+    "loading":"טוען",
+    "close":"סגור",
+    "unkownError":"שגיאה לא ידועה"
+}

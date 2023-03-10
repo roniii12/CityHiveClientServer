@@ -1,0 +1,12 @@
+{
+    "newMessage":"New Message",
+    "phoneNumber":"Phone Number",
+    "message":"Message",
+    "clear": "Clear",
+    "submit":"Submit",
+    "messageSentSuccessfully":"Message sent successfully",
+    "messageHistory":"Message History",
+    "loading":"Loading",
+    "close":"Close",
+    "unkownError":"Unkown Error"
+}

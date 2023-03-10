@@ -1,0 +1,8 @@
+<div class="wrapper-message">
+    <app-messages-list *ngIf="!isEditMessage"
+    (addMessage)="onCloseMessageList()"></app-messages-list>
+    <app-message-edit *ngIf="isEditMessage"
+        (addedMessage)="onCloseEditMessage($event)"></app-message-edit>
+</div>
+
+<app-loading-dialog *ngIf="isLoading"></app-loading-dialog>
